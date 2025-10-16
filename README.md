@@ -140,6 +140,6 @@ taxi-data-flask-app/
 | Out of range value for column 'trip_speed_kmph' | Ensure your ETL script caps unrealistic speed values (e.g. >300 km/h) |
 | Webpage shows no data | Check the date range filters and make sure your trips table has data within that range |
 
-## Video Walkthrough
+## Link of Video Walkthrough below
 
 https://youtu.be/TAojUZEXefo
