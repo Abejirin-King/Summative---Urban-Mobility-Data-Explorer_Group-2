@@ -77,6 +77,8 @@ You should see output like:
  All done! Inserted: 15000, Errors: 0
 ```
 
+(Could take 40 mins - 1 hr due to file size)
+
 ## Running the Flask App
 
 Start the Flask server:
