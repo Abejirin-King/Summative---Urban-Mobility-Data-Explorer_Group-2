@@ -114,18 +114,21 @@ Then open your browser and visit:
 ```
 taxi-data-flask-app/
 │
-├── app.py                    # Flask web app
-├── load_to_mysql.py          # Data ingestion script
-├── cleaned_data.csv          # Clean dataset
+├── app.py                    
+├── load_to_mysql.py          
+├── cleaned_data.csv          
 │
+|── database
+|   └── schema.sql
+|
 ├── templates/
-│   └── index.html            # Frontend HTML
+│   └── index.html         
 │
 ├── static/
-│   ├── style.css             # CSS styling
-│   └── script.js             # Frontend logic
+│   ├── style.css             
+│   └── script.js            
 │
-└── README.md                 # Project documentation
+└── README.md                 
 ```
 
 ## Common Issues
