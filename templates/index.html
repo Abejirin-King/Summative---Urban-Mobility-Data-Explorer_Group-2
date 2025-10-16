@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NYC Taxi Data Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>NYC Taxi Data Dashboard</h1>
+
+  <div class="filters">
+    <label>Start Date: <input type="date" id="start"></label>
+    <label>End Date: <input type="date" id="end"></label>
+    <label>Min Fare: <input type="number" id="minFare" value="0"></label>
+    <label>Max Fare: <input type="number" id="maxFare" value="200"></label>
+    <button onclick="fetchData()">Search</button>
+  </div>
+
+  <div class="summary">
+    <h2>Trip Summary</h2>
+    <p>Total Trips: <span id="totalTrips">–</span></p>
+    <p>Average Fare: <span id="avgFare">–</span></p>
+    <p>Average Distance (km): <span id="avgDistance">–</span></p>
+    <p>Average Speed (km/h): <span id="avgSpeed">–</span></p>
+  </div>
+
+  <div class="table-container">
+    <h2>Trip Details (Top 100)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Pickup Time</th>
+          <th>Dropoff Time</th>
+          <th>Distance (km)</th>
+          <th>Fare ($)</th>
+          <th>Speed (km/h)</th>
+        </tr>
+      </thead>
+      <tbody id="tripTable"></tbody>
+    </table>
+  </div>
+
+  <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>
